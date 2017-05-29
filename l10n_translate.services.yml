@@ -1,0 +1,10 @@
+services:
+  cache.l10n:
+    class: Drupal\Core\Cache\CacheBackendInterface
+    tags:
+      - { name: cache.bin }
+    factory: cache_factory:get
+    arguments: [l10n]
+  l10n_translate.translate:
+    class: Drupal\l10n_translate\TranslationService
+    arguments: ['@config.factory', '@cache.l10n', '@http_client']

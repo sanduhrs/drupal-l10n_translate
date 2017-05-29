@@ -1,0 +1,7 @@
+l10n_translate.default_controller_translate:
+  path: 'translate'
+  defaults:
+    _controller: '\Drupal\l10n_translate\Controller\DefaultController::translate'
+    _title: 'Translate'
+  requirements:
+    _permission: 'access content'

@@ -1,0 +1,5 @@
+name: L10n Translate
+type: module
+description: Suggestions for translations from Google translate
+core: 8.x
+package: Localization server
