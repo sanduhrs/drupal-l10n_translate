@@ -16,6 +16,7 @@ interface TranslationInterface {
    *   A language code e.g. en, de, fr.
    *
    * @return self
+   *   Return self for chaining.
    */
   public function setSource($langcode);
 
@@ -26,13 +27,15 @@ interface TranslationInterface {
    *   A language code e.g. en, de, fr.
    *
    * @return self
+   *   Return self for chaining.
    */
   public function setTarget($langcode);
 
   /**
    * Translate a string.
    *
-   * @param $string
+   * @param string $string
+   *   The string to translate.
    *
    * @return array
    *   An array of translated string and some more information.

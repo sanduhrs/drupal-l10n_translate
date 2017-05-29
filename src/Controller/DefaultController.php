@@ -24,7 +24,6 @@ class DefaultController extends ControllerBase {
     $source = $request->get('source');
     $target = $request->get('target');
 
-    //TODO: Inject the service;
     /** @var \Drupal\l10n_translate\TranslationService $translation */
     $translation = \Drupal::service('l10n_translate.translate');
     $translation->setSource($source);

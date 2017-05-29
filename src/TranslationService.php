@@ -36,12 +36,16 @@ class TranslationService implements TranslationInterface {
   protected $httpClient;
 
   /**
+   * The source string language code.
+   *
    * @var string
    *   A langcode string, e.g. en, de, fr.
    */
   protected $source;
 
   /**
+   * The target string language code.
+   *
    * @var string
    *   A langcode string, e.g. en, de, fr.
    */
@@ -51,8 +55,11 @@ class TranslationService implements TranslationInterface {
    * TranslationService constructor.
    *
    * @param \Drupal\Core\Config\ConfigFactoryInterface $config
+   *   The service configuration.
    * @param \Drupal\Core\Cache\DatabaseBackend $cache
+   *   The service cache.
    * @param \GuzzleHttp\Client $http_client
+   *   The HTTP client.
    */
   public function __construct(
       ConfigFactoryInterface $config,
